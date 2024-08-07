@@ -1,0 +1,149 @@
+:root {
+    --azulescuro-cor: #050050;
+    --dark-cor: #000000;
+    --branco-cor: #ffffff;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--branco-cor);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: var(--dark-cor);
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.content {
+    line-height: 1.6;
+}
+
+.content h2 {
+    color: var(--azulescuro-cor);
+    margin-bottom: 30px;
+}
+
+.content p {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+/* Botão de Voltar */
+.back-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: linear-gradient(45deg, #001327, #010027);
+    color: var(--branco-cor);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000; 
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background: linear-gradient(45deg, #017cff, #00074b);
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px rgba(0, 61, 126, 0.5);
+}
+
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para a custom container */
+.custom-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Estilo para o título */
+.custom-title {
+    color: var(--azulescuro-cor);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+/* Layout da imagem e do texto */
+.custom-content {
+    display: flex;
+    align-items: flex-start; /* Alinha o texto ao topo da imagem */
+    gap: 20px;
+}
+
+.custom-text {
+    flex: 1;
+    /* Remover fundo, bordas e sombra para eliminar a caixa */
+    padding: 20px;
+    background-color: transparent; /* Torna o fundo transparente */
+    border-radius: 0; /* Remove bordas arredondadas */
+    box-shadow: none; /* Remove sombra */
+    text-align: justify; /* Justifica o texto */
+}
+
+.custom-image-container {
+    flex: 0 0 30%; /* Define um tamanho fixo para a imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.custom-image-container:hover img {
+    transform: scale(1.05); /* Aumenta a imagem quando passa o mouse em cima */
+}
+
+/* Estilo para o texto de crédito da imagem */
+.image-credit {
+    text-align: right; /* Alinha o texto à direita */
+    font-style: italic;
+    color: var(--dark-cor);
+    margin-top: 10px;
+}
